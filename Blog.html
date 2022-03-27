@@ -1,0 +1,194 @@
+<html>
+<head>
+    <title>Project</title>
+    <link rel="stylesheet" href="Blog.css">
+    <script src="Blog.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <nav>
+        <div class="nav-left">
+            <img src="Assets/brandred.png" alt="logo">
+            <ul>
+                <li>
+                    <a href="index.html">Home</a>
+                </li>
+                <li>
+                    <a href="Blog.html">My Project</a>
+                </li>
+            </ul>
+        </div>
+
+        <div class="nav-right">
+            <a href="form.html">Contact</a>
+        </div>
+    </nav>
+
+</head>
+
+<body>
+        <section class="blogForm">
+            <h1>Add My Project</h1>
+            <form onsubmit="handleSubmit(event)">
+                <div class="projectName">
+                    <label for="input-name">
+                        Project Name    
+                    </label>
+                    <input type="text" id="input-name" />
+                </div>
+
+                <div class="date">
+                    <div class="startDate">
+                        <label for="start-date">
+                            Start Date    
+                        </label>
+                        <input type="text" id="start-date" />
+                    </div>
+                    <div class="endDate">
+                        <label for="end-date">
+                            End Date
+                        </label>
+                        <input type="text" id="end-date" />
+                    </div>
+                </div>
+
+                <div class="desc">
+                    <label for="input-message">
+                        Description
+                    </label>
+                    <textarea id="input-desc"></textarea>
+                </div>
+
+                <div class="techCont">
+                    <label for="techno">Technologies</label>
+                    <div class="option">
+                        <div class="nodeJs">
+                            <input type="checkbox" id="nodeJs" value="fa-brands fa-node-js" />
+                            <label for="nodeJs">Node JS</label>                    
+                        </div>
+                        <div class="react">
+                            <input type="checkbox" id="react" value="fa-brands fa-react" />
+                            <label for="react">React JS</label>                    
+                        </div>
+                        <div class="nextJs">
+                            <input type="checkbox" id="nextJs" value="fa-solid fa-angles-right" />
+                            <label for="nextJs">Next JS</label>                    
+                        </div>
+                        <div class="typescript">
+                            <input type="checkbox" id="typescript" value="fa-solid fa-keyboard" />
+                            <label for="typescript">Typescript</label>                    
+                        </div>
+                    </div> 
+                </div>
+
+                <div>
+                    <label for="image-blog">Upload Image</label>
+                    <input type="file" class="uploadBox" id="image-blog" />
+                  </div>
+            
+                  <div class="button">
+                    <button>
+                      Submit
+                    </button>
+                  </div>                
+            </form>
+        </section>
+
+        <section class="blogList">
+            <div class="blogContainer">
+              <h1>My Project</h1>
+              <div class="cardContainer" id="blog">
+                <div class="card">
+                  <div class="image">
+                    <img src="https://www.itsolutionstuff.com/upload/laravel-5-8-crud-app.jpg" alt="">
+                  </div>
+                  <div class="title">
+                    <h3>
+                      <a href="detail blog.html">Dumbays Mobile App - 2022</a>
+                    </h3>
+                  </div>
+                  <div class="desc">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio velit recusandae perspiciatis vitae
+                      dicta quae laudantium dolor quibusdam a, quas qui nobis quidem aperiam tenetur. Distinctio hic fuga ut
+                      perspiciatis.</p>
+                  </div>
+                  <div class="tech">
+                    <img src="https://www.pinclipart.com/picdir/middle/537-5374089_react-js-logo-clipart.png" alt="">
+                    <img src="https://www.pinclipart.com/picdir/middle/537-5374089_react-js-logo-clipart.png" alt="">
+                    <img src="https://www.pinclipart.com/picdir/middle/537-5374089_react-js-logo-clipart.png" alt="">
+                  </div>
+                  <div class="edit">
+                    <button>edit</button>
+                    <button>delete</button>
+                  </div>
+                </div>
+                <div class="card">
+                  <div class="image">
+                    <img src="https://www.itsolutionstuff.com/upload/laravel-5-8-crud-app.jpg" alt="">
+                  </div>
+                  <div class="title">
+                    <h3><a href="detail blog.html">Dumbays Mobile App - 2022</a></h3>
+                  </div>
+                  <div class="desc">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio velit recusandae perspiciatis vitae
+                      dicta quae laudantium dolor quibusdam a, quas qui nobis quidem aperiam tenetur. Distinctio hic fuga ut
+                      perspiciatis.</p>
+                  </div>
+                  <div class="tech">
+                    <img src="https://www.pinclipart.com/picdir/middle/537-5374089_react-js-logo-clipart.png" alt="">
+                    <img src="https://www.pinclipart.com/picdir/middle/537-5374089_react-js-logo-clipart.png" alt="">
+                    <img src="https://www.pinclipart.com/picdir/middle/537-5374089_react-js-logo-clipart.png" alt="">
+                  </div>
+                  <div class="edit">
+                    <button>edit</button>
+                    <button>delete</button>
+                  </div>
+                </div>
+                <div class="card">
+                  <div class="image">
+                    <img src="https://www.itsolutionstuff.com/upload/laravel-5-8-crud-app.jpg" alt="">
+                  </div>
+                  <div class="title">
+                    <h3><a href="detail blog.html">Dumbays Mobile App - 2022</a></h3>
+                  </div>
+                  <div class="desc">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio velit recusandae perspiciatis vitae
+                      dicta quae laudantium dolor quibusdam a, quas qui nobis quidem aperiam tenetur. Distinctio hic fuga ut
+                      perspiciatis.</p>
+                  </div>
+                  <div class="tech">
+                    <img src="https://www.pinclipart.com/picdir/middle/537-5374089_react-js-logo-clipart.png" alt="">
+                    <img src="https://www.pinclipart.com/picdir/middle/537-5374089_react-js-logo-clipart.png" alt="">
+                    <img src="https://www.pinclipart.com/picdir/middle/537-5374089_react-js-logo-clipart.png" alt="">
+                  </div>
+                  <div class="edit">
+                    <button>edit</button>
+                    <button>delete</button>
+                  </div>
+                </div>
+                <div class="card">
+                  <div class="image">
+                    <img src="https://www.itsolutionstuff.com/upload/laravel-5-8-crud-app.jpg" alt="">
+                  </div>
+                  <div class="title">
+                    <h3><a href="detail blog.html">Dumbays Mobile App - 2022</a></h3>
+                  </div>
+                  <div class="desc">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio velit recusandae perspiciatis vitae
+                      dicta quae laudantium dolor quibusdam a, quas qui nobis quidem aperiam tenetur. Distinctio hic fuga ut
+                      perspiciatis.</p>
+                  </div>
+                  <div class="tech">
+                    <img src="https://www.pinclipart.com/picdir/middle/537-5374089_react-js-logo-clipart.png" alt="">
+                    <img src="https://www.pinclipart.com/picdir/middle/537-5374089_react-js-logo-clipart.png" alt="">
+                    <img src="https://www.pinclipart.com/picdir/middle/537-5374089_react-js-logo-clipart.png" alt="">
+                  </div>
+                  <div class="edit">
+                    <button>edit</button>
+                    <button>delete</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+        </section>
+</body>
+</html>

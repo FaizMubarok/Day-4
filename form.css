@@ -1,0 +1,48 @@
+body{
+    margin: 0;
+}
+
+nav{
+    background-color: rgb(245, 243, 247);
+    display: flex;
+    height: 7vh;
+    font-weight: bold;
+}
+
+.nav-left img{
+    width: 50px;
+}
+
+nav .nav-left{  
+    flex: 50%;
+    padding-left: 100px;
+    display: flex;
+    align-items: center;
+}
+
+nav .nav-left li{
+    display: inline;
+}
+
+nav .nav-left ul li a{
+    text-decoration: none;
+    color: black;
+    padding: 12px;
+}
+
+nav .nav-right{
+    
+    display: flex;
+    flex: 50%;
+    justify-content: flex-end;
+    align-items: center;
+    padding-right: 100px ;
+}
+
+nav .nav-right a{
+    background-color: orangered;
+    color: white;
+    padding: 8px 20px;
+    border-radius: 10px;
+    text-decoration: none;
+}
