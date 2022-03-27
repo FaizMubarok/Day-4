@@ -3,7 +3,6 @@ body{
     background-color: rgb(206, 205, 205);
     font-family: Arial, Helvetica, sans-serif;
     box-sizing: border-box;
-    padding: 50px;
 }
 
 nav{
@@ -54,6 +53,7 @@ nav .nav-right a{
 
 .blog-detail{
     justify-content: center;
+    padding: 50px;
 }
 
 section h1{
